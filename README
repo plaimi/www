@@ -1,0 +1,17 @@
+About https://secure.plaimi.net
+===============================
+This is the homepage of plaimi, a free software Haskell game development
+company located in Gjøvik, Norway.
+
+The Website is generated with Hakyll. We have chosen to make it publicly
+available as an example Hakyll site to look at, for those of you who are
+interested in learning Hakyll.
+
+We accept patches. So if you think our page looks really ugly, just write a
+patch that makes it beautiful. If you find a typo, clumsy HTML blocks,
+anything -- you can report a bug at <https://secure.plaimi.net/bugs>, or fix
+it yourself and send the patch to the mailing list:
+<https://secure.plaimi.net/mailing.html>.
+
+
+/* vim: set textwidth=78 et spell formatoptions=actw2 autoindent: */

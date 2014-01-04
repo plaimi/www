@@ -1,0 +1,13 @@
+# Swap files
+.*
+!.gitignore
+
+# Temporary files
+*~
+
+# Build
+*.hi
+*.o
+site
+_cache/
+_site/

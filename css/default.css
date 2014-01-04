@@ -1,0 +1,91 @@
+body {
+    color: #ABC;
+    background-color: #012345;
+    font-size: 16px;
+    margin: 0px auto 0px auto;
+    width: 60%;
+    background-image: url("../images/logo.svg");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 384px;
+}
+
+div#content {
+    background-color: #123456;
+    border: 2px solid #999;
+    padding: 20px 20px 20px 20px;
+    min-height: 512px;
+}
+
+div#header {
+    border-bottom: 2px solid #999;
+    margin-bottom: 30px;
+    padding: 12px 0px 12px 0px;
+}
+
+div#logo a {
+    color: #999;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div#header #navigation {
+    text-align: right;
+}
+
+div#header #navigation a {
+    color: #999;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div#footer {
+    border-top: solid 2px #999;
+    color: #999;
+    font-size: 12px;
+    margin-top: 30px;
+    padding: 12px 0px 12px 0px;
+    text-align: right;
+}
+
+div.info {
+    color: #999;
+    font-size: 14px;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+a:link {
+	color: #DECAFF;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #FADEDD;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #FACEDD;
+	text-decoration: underline;
+}
+
+p {
+    width: 33em;
+}
+
+IMG {
+    float: right;
+}
