@@ -1,0 +1,6 @@
+---
+title: Welcome
+---
+Welcome to plaimi. This is our new Website. You can get the source code on 
+[GitHub](https://github.com/plaimi/www). We will keep you posted on our 
+activities here.
