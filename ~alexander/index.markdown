@@ -10,7 +10,7 @@ are my personal views, not those of plaimi.
 
 Alexander Berntsen is a free software hacker wizard that lives in Gjøvik,
 Norway with his cohabitant, Mette Pernille, who occasionally bakes him
-muffins.
+muffins and cookies etc.
 
 * * *
 #Contact
@@ -111,11 +111,8 @@ Project coordination.
 Mentoring.  
 Founding and running the free software lab (flab).
 
-* Cerpus. Technical developer 2012 - present.  
-BrainBank design.  
-NDLA workflow.  
-Game technology and methodology advising.  
-Game design, prototyping and development.
+* plaimi. Managing Director/Chief Executive Officer. 2014 - present.  
+We are legally required to have one of these. Might as well be me.
 
 * Libregamewiki. sysop. 2012 - present.  
 Contribution.  
@@ -126,9 +123,16 @@ Portage.
 Licenses.  
 Haskell.
 
+* Cerpus. Technical developer 2012 - 2014  
+BrainBank design.  
+NDLA workflow.  
+Game technology and methodology advising.  
+Game design, prototyping and development.
+
 * * *
 # Some of my more substantial projects
 * [bweakfwu](/games/bweakfwu.html).
+* [coreutilhs](https://github.com/alexander-b/coreutilhs).
 * [limbs off](/games/limbs-off.html).
 * [quizbot](/games/quizbot.html).
 
@@ -164,4 +168,4 @@ contribution.
 * [donttrack.us](https://donttrack.us)
 * [Tor](https://www.torproject.org/)
 * [iPredator](https://ipredator.se/)
-* Modified [Programmer's Dvorak](https://www.kaufmann.no/roland/dvorak/)
+* [Programmer's Dvorak](https://www.kaufmann.no/roland/dvorak/)
