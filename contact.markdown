@@ -2,6 +2,8 @@
 title: Contact
 ---
 Visit us at:  
+Plaimi AS  
+[\(60.78915, 10.67538\)](http://www.openstreetmap.org/#map=18/60.78915/10.67538)  
 Ko-Aks  
 Mustad Næringspark  
 Raufossvegen 40  
