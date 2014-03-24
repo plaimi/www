@@ -14,4 +14,4 @@ Our core hours are 12:00 to 15:00. However, we encourage you to schedule a
 meeting via email rather than showing up at our doorstep, to make absolutely
 sure we are in.
 
-\#plaimi @ freenode 
+IRC: \#plaimi @ freenode 
