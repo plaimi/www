@@ -138,15 +138,11 @@ Game design, prototyping and development.
 
 * * *
 # Some of the projects I have contributed substantially to in one way or the other
-* [F-Droid](https://f-droid.org/).
 * [Gentoo](https://www.gentoo.org/).
 * [Gentoo-Haskell](https://github.com/gentoo-haskell/gentoo-haskell).
+* [GHC](https://ghc.haskell.org/).
 * [i3](https://i3wm.org/).
-* [ndla](https://ndla.no/).
 * [Portage](https://www.gentoo.org/proj/en/portage/).
-* [Project Sunrise](https://overlays.gentoo.org/proj/sunrise/).
-* [PRISM⚡break](https://prism-break.org/).
-* [reactive-banana](https://haskell.org/haskellwiki/Reactive-banana).
 * Others... but the list would go on forever if I put up every tiny
 contribution.
 
