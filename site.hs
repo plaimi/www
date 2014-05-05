@@ -52,7 +52,9 @@ main = hakyllWith configuration $ do
     route   idRoute
     compile $ do
       games <- loadAll "games/*"
+      other <- loadAll "other/*"
       let indexCtx = listField "games" defaultContext (return games) <>
+                     listField "other" defaultContext (return other) <>
                      defaultContext
       getResourceBody
         >>= applyAsTemplate indexCtx
@@ -82,6 +84,25 @@ main = hakyllWith configuration $ do
       makeItem ""
         >>= loadAndApplyTemplate "templates/game-list.html" gamesCtx
         >>= loadAndApplyTemplate "templates/default.html"   gamesCtx
+        >>= relativizeUrls
+
+  match "other/*" $ do
+    route $ setExtension "html"
+    compile $ pandocCompiler
+        >>= loadAndApplyTemplate "templates/other.html"   defaultContext
+        >>= loadAndApplyTemplate "templates/default.html" defaultContext
+        >>= relativizeUrls
+
+  create ["other.html"] $ do
+    route   idRoute
+    compile $ do
+      other <- loadAll "other/*"
+      let otherCtx = listField "other" defaultContext (return other) <>
+                     constField "title" "other"                      <>
+                     defaultContext
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/other-list.html" otherCtx
+        >>= loadAndApplyTemplate "templates/default.html"    otherCtx
         >>= relativizeUrls
 
   match "news/*" $ do
