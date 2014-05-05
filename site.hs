@@ -94,10 +94,10 @@ main = hakyllWith configuration $ do
   create ["news.html"] $ do
     route   idRoute
     compile $ do
-      games <- recentFirst =<< loadAll "news/*"
+      news <- recentFirst =<< loadAll "news/*"
       let newsCtx    = dateField "date" "%B %e, %Y" <> defaultContext
-      let archiveCtx = listField "news"  newsCtx (return games) <>
-                       constField "title" "News"                <>
+      let archiveCtx = listField "news"  newsCtx (return news) <>
+                       constField "title" "News"               <>
                        defaultContext
       makeItem ""
         >>= loadAndApplyTemplate "templates/news-list.html" archiveCtx
