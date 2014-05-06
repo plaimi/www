@@ -53,9 +53,13 @@ main = hakyllWith configuration $ do
     compile $ do
       games <- loadAll "games/*"
       other <- loadAll "other/*"
-      let indexCtx = listField "games" defaultContext (return games) <>
-                     listField "other" defaultContext (return other) <>
-                     defaultContext
+      news  <- recentFirst =<< loadAll "news/*"
+      let newsCtx  = dateField "date" "%B %e, %Y" <> defaultContext
+      let indexCtx =
+            listField "news"  newsCtx        (return news)  <>
+            listField "games" defaultContext (return games) <>
+            listField "other" defaultContext (return other) <>
+            defaultContext
       getResourceBody
         >>= applyAsTemplate indexCtx
         >>= loadAndApplyTemplate "templates/default.html" indexCtx
