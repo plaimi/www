@@ -10,7 +10,9 @@ Privacy is a technological and a sociological challenge. The former solves
 itself if we solve the latter by raising awareness. Help raise awareness. Help
 [Reset the Net](https://www.resetthenet.org/).
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/qKk8MHFLNNE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315"
+src="//www.youtube.com/embed/qKk8MHFLNNE?rel=0" frameborder="0"
+allowfullscreen></iframe>
 
 
 P.S.
