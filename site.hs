@@ -52,12 +52,14 @@ main = hakyllWith configuration $ do
     route   idRoute
     compile $ do
       games <- loadAll "games/*"
+      works <- loadAll "works/*"
       other <- loadAll "other/*"
       news  <- recentFirst =<< loadAll "news/*"
       let newsCtx  = dateField "date" "%B %e, %Y" <> defaultContext
       let indexCtx =
             listField "news"  newsCtx        (return news)  <>
             listField "games" defaultContext (return games) <>
+            listField "works" defaultContext (return works) <>
             listField "other" defaultContext (return other) <>
             defaultContext
       getResourceBody
@@ -88,6 +90,25 @@ main = hakyllWith configuration $ do
       makeItem ""
         >>= loadAndApplyTemplate "templates/game-list.html" gamesCtx
         >>= loadAndApplyTemplate "templates/default.html"   gamesCtx
+        >>= relativizeUrls
+
+  match "works/*" $ do
+    route $ setExtension "html"
+    compile $ pandocCompiler
+        >>= loadAndApplyTemplate "templates/work.html"    defaultContext
+        >>= loadAndApplyTemplate "templates/default.html" defaultContext
+        >>= relativizeUrls
+
+  create ["works.html"] $ do
+    route   idRoute
+    compile $ do
+      works <- loadAll "works/*"
+      let worksCtx = listField "works" defaultContext (return works) <>
+                     constField "title" "Works"                      <>
+                     defaultContext
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/work-list.html" worksCtx
+        >>= loadAndApplyTemplate "templates/default.html"   worksCtx
         >>= relativizeUrls
 
   match "other/*" $ do
