@@ -1,5 +1,5 @@
 {-
-- Copyright (C) 2013 Alexander Berntsen <alexander@plaimi.net>
+- Copyright (C) 2013, 2014 plaimi <www@plaimi.net>
 -
 - Copying and distribution of this file, with or without modification,
 - are permitted in any medium without royalty provided the copyright
@@ -42,6 +42,7 @@ main = hakyllWith configuration $ do
 
   match (fromList ["about.markdown"
                   ,"contact.markdown"
+                  ,"swag.markdown"
                   ,"~alexander/index.markdown"]) $ do
     route   $ setExtension "html"
     compile $ pandocCompiler
