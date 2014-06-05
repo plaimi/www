@@ -130,23 +130,6 @@ Game technology and methodology advising.
 Game design, prototyping and development.
 
 * * *
-# Some of my more substantial projects
-* [bweakfwu](/games/bweakfwu.html).
-* [coreutilhs](https://github.com/alexander-b/coreutilhs).
-* [limbs off](/games/limbs-off.html).
-* [quizbot](/games/quizbot.html).
-
-* * *
-# Some of the projects I have contributed substantially to in one way or the other
-* [Gentoo](https://www.gentoo.org/).
-* [Gentoo-Haskell](https://github.com/gentoo-haskell/gentoo-haskell).
-* [GHC](https://ghc.haskell.org/).
-* [i3](https://i3wm.org/).
-* [Portage](https://www.gentoo.org/proj/en/portage/).
-* Others... but the list would go on forever if I put up every tiny
-contribution.
-
-* * *
 #Computing
 * [Free software](https://www.gnu.org/philosophy/free-sw.html)
 * [Haskell](https://www.haskell.org/)
@@ -165,3 +148,25 @@ contribution.
 * [Tor](https://www.torproject.org/)
 * [iPredator](https://ipredator.se/)
 * [Programmer's Dvorak](https://www.kaufmann.no/roland/dvorak/)
+
+* * *
+#Programming languages
+
+Programming languages and their theory and applicability is my biggest 
+interest. My current favourite is Haskell, and I keep a collection of
+[recommended Haskell reading and watching](haskell.html).
+
+As a curiosity, see the
+[language overview](https://www.ohloh.net/accounts/alexanderb/languages) on
+ohloh. It is a reasonable good account of how many lines of public code I 
+have in different languages. This site has aggregated this from the 
+repositories of currently publicly available code. Of course, I have written
+code that is not publicly available (especially while learning a new
+language), so take these figures with buckets of salt. They are however, quite
+interesting to me. They paint a reasonable picture of what languages I am
+using for "real world work".
+
+Another curiosity would be the
+[skills & knowledge](https://www.linkedin.com/in/hackerwizard) people have
+endorsed me for on linkedin. I'm not sure I agree with all of them, but it's
+interesting to see what people at least *think* I am good at.

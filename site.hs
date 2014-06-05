@@ -45,6 +45,7 @@ main = hakyllWith configuration $ do
   match (fromList ["about.markdown"
                   ,"contact.markdown"
                   ,"swag.markdown"
+                  ,"~alexander/haskell.markdown"
                   ,"~alexander/index.markdown"]) $ do
     route   $ setExtension "html"
     compile $ pandocCompiler

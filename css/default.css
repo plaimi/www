@@ -82,6 +82,46 @@ a:visited {
 	text-decoration: underline;
 }
 
+#red a:link {
+    color: #FF5555;
+}
+
+#red a:active {
+    color: #FF5555;
+}
+
+#red a:visited {
+    color: #FF5555;
+}
+
+#green a:link {
+    color: #55FF55;
+}
+
+#green a:active {
+    color: #55FF55;
+}
+
+#green a:visited {
+    color: #55FF55;
+}
+
+#yellow a:link {
+    color: #FFFF55;
+}
+
+#yellow a:active {
+    color: #FFFF55;
+}
+
+#yellow a:visited {
+    color: #FFFF55;
+}
+
+#dontmarginpls p {
+    margin-top: 0;
+}
+
 p {
     width: 33em;
 }
