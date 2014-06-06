@@ -28,6 +28,8 @@ import Hakyll.Web.Template.Context (constField, dateField, defaultContext
                                    ,listField)
 import Hakyll.Web.Template.List (recentFirst)
 
+import Config (synchCommand, synchTarget)
+
 main ::  IO ()
 main = hakyllWith configuration $ do
   match "templates/*" $ compile templateCompiler
@@ -156,5 +158,3 @@ configuration =
   defaultConfiguration {
                        deployCommand = unwords [synchCommand, synchTarget]
                        }
-  where synchCommand = "rsync -ave 'ssh -p [port] _site"
-        synchTarget  = "[user]@[host]:/[path]/"
