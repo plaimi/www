@@ -101,6 +101,11 @@ Bachelor Thesis about free software game development. 2012.
 (Studied Computer Engineering at Høgskolen i Narvik before changing track and
 school both. 2008-2010.)
 
+* Master of Science  
+Degree in Applied Computer Science from Høgskolen i Gjøvik. 2012-2014.  
+[Master Thesis](https://github.com/alexander-b/master-thesis) about
+programming game systems in Haskell. 2014.
+
 ##Engagements
 * plaimi. Hacker wizard. 2010 - present.  
 Game design.  
