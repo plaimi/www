@@ -37,7 +37,7 @@ necessary.
 <div id="dontmarginpls">
 * * *
 # Concepts
-* <div id="green">[Simon Peyton Jones: Haskell is useless](https://www.youtube.com/watch?v=iSmkqocn0oQ) * </div>
+* <div id="green">[*Simon Peyton Jones: Haskell is useless*](https://www.youtube.com/watch?v=iSmkqocn0oQ) * % </div>
   A quick chat with Simon, as he tells us the difference between Haskell and e.g. C, in terms of type safety and having effects.
 
 * <div id="green">[Aditya Bhargava: Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) * </div>
@@ -87,7 +87,7 @@ necessary.
 * <div id="green">[Brian O'Sullivan, Don Stewart & John Goerzen: Real World Haskell](http://book.realworldhaskell.org/) * </div>
   Example-heavy introductionary book. A few of the simplifications and wordings annoyed me, but those are minor complaints. It's a good read overall.
 
-* <div id="yellow">[Simon Peyton Jones: A Taste of Haskell](http://youtu.be/jLj1QV11o9g) ** % </div>
+* <div id="yellow">[*Simon Peyton Jones: A Taste of Haskell*](http://youtu.be/jLj1QV11o9g) ** % </div>
   Simon giving us a whirlwind tour. Might pique your interest, and as such might act as a first stop. Can be watched in tandem with reading Learn You a Haskell for Great Good!, to get a sneak peek at what's coming up.
 
 * * *
@@ -133,10 +133,10 @@ necessary.
 * <div id="yellow">[Philip Wadler & Stephen Blott: How to make ad-hoc polymorphism less ad-hoc](http://202.3.77.10/users/karkare/courses/2010/cs653/Papers/ad-hoc-polymorphism.pdf) ** </div>
   The introduction of type classes. Great paper; a must-read. Imperative functional programming is its counterpart for doing IO.
 
-* <div id="yellow">[*Simon Peyton Jones: Adventures with Types in Haskell (Lecture 1)*](https://www.youtube.com/watch?v=6COvD8oynmI) * * % </div>
-* <div id="yellow">[*Simon Peyton Jones: Adventures with Types in Haskell (Lecture 2)*](https://www.youtube.com/watch?v=brE_dyedGm0) * * % </div>
-* <div id="yellow">[*Simon Peyton Jones: Adventures with Types in Haskell (Lecture 3)*](https://www.youtube.com/watch?v=2IZQx7WNOMs) * * % </div>
-* <div id="yellow">[*Simon Peyton Jones: Adventures with Types in Haskell (Lecture 4)*](https://www.youtube.com/watch?v=XtogTwzcGcM) * * % </div>
+* <div id="yellow">[*Simon Peyton Jones: Adventures with Types in Haskell (Lecture 1)*](https://www.youtube.com/watch?v=6COvD8oynmI) ** % </div>
+* <div id="yellow">[*Simon Peyton Jones: Adventures with Types in Haskell (Lecture 2)*](https://www.youtube.com/watch?v=brE_dyedGm0) ** % </div>
+* <div id="yellow">[*Simon Peyton Jones: Adventures with Types in Haskell (Lecture 3)*](https://www.youtube.com/watch?v=2IZQx7WNOMs) ** % </div>
+* <div id="yellow">[*Simon Peyton Jones: Adventures with Types in Haskell (Lecture 4)*](https://www.youtube.com/watch?v=XtogTwzcGcM) ** % </div>
   Simon shows us how Haskell and GHC are essentially crazy laboratory playgrounds. Very enlightening lecture series that introduces lots of cool things on both the type and kind level. For experienced Haskellers only! Simon moves very quickly here.
 
 * <div id="yellow">[Sam Lindley & Conor McBride: Hasochism: The Pleasure and Pain of Dependently Typed Haskell Programming](http://homepages.inf.ed.ac.uk/slindley/papers/hasochism.pdf) ** </div>
