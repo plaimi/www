@@ -46,6 +46,9 @@ necessary.
 * <div id="green">[Aditya Bhargava: Three Useful Monads](http://adit.io/posts/2013-06-10-three-useful-monads.html) * </div>
   A pleasant intro to the writer, reader and state monads. Builds on the previous one, and continues the simplifications, unfortunately.
 
+* <div id="green">[Chris Smith: Why Do Monads Matter?](http://cdsmith.wordpress.com/2012/04/18/why-do-monads-matter/) * </div>
+  A much more correct intro to why monads matter to programmers, aimed at programmers or mathematicians. It's very gentle, and, in my opinion, very good. Highly recommended!
+
 * <div id="yellow">[Graham Hutton: A tutorial on the universality and  expressiveness of fold](http://www.cs.nott.ac.uk/~gmh/fold.pdf) * * </div>
   Comprehensive introduction to fold (AKA reduce, insert, inject, etc.), using lists as an example data structure. The reader is expected to know basic functional programming, and I'd recommend not being a stranger to arithmetic and algebra. Haskell is used as an example language, but the code is intended to be generalisable. The paper teaches you to derive functions using fold. This is slightly nontrivial, and I don't recommend this as an introduction to practical use of fold per se. That said, fold (λx g → fold (λy → g) (g [1])) (1 :) is the scariest function you'll encounter here, so it's not *that* scary.
 
