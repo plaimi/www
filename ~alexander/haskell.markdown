@@ -41,10 +41,10 @@ necessary.
   A quick chat with Simon, as he tells us the difference between Haskell and e.g. C, in terms of type safety and having effects.
 
 * <div id="green">[Aditya Bhargava: Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) * </div>
-  A pleasant intro to functors, applicatives and monads. It does make some simplifications.
+  A pleasant intro to functors, applicatives and monads. Too many simplifications for my taste, but still useful. "Values wrapped in context" is not a good way to consider monads. Instead, simply think of them of a way to get a → m b.
 
 * <div id="green">[Aditya Bhargava: Three Useful Monads](http://adit.io/posts/2013-06-10-three-useful-monads.html) * </div>
-  A pleasant intro to the writer, reader and state monads. Bit too many simplifications for my taste, but still very useful.
+  A pleasant intro to the writer, reader and state monads. Builds on the previous one, and continues the simplifications, unfortunately.
 
 * <div id="red">[Philip Wadler: Comprehending Monads](http://www.diku.dk/hjemmesider/ansatte/henglein/papers/wadler1992.pdf) *** </div>
   Maybe the ultimate guide to comprehending monads? Bit difficult material though -- best understand how to use them. See the imperative programming section. This paper is kind of like to monads what Type classes in Haskell are to type classes.
