@@ -40,6 +40,9 @@ necessary.
 * <div id="green">[*Simon Peyton Jones: Haskell is useless*](https://www.youtube.com/watch?v=iSmkqocn0oQ) * % </div>
   A quick chat with Simon, as he tells us the difference between Haskell and e.g. C, in terms of type safety and having effects.
 
+* <div id="green">[Gabriel Gonzalez: Equational reasoning](http://www.haskellforall.com/2013/12/equational-reasoning.html) * </div>
+  The substitutions of equals for equals is in my opinion the most powerful thing about Haskell and purely functional programming languages. This article explains how to do it, in a simple yet comprehensive way.
+
 * <div id="green">[Aditya Bhargava: Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) * </div>
   A pleasant intro to functors, applicatives and monads. Too many simplifications for my taste, but still useful. "Values wrapped in context" is not a good way to consider monads. Instead, simply think of them of a way to get a → m b.
 
@@ -48,6 +51,9 @@ necessary.
 
 * <div id="green">[Chris Smith: Why Do Monads Matter?](http://cdsmith.wordpress.com/2012/04/18/why-do-monads-matter/) * </div>
   A much more correct intro to why monads matter to programmers, aimed at programmers or mathematicians. It's very gentle, and, in my opinion, very good. Highly recommended!
+
+* <div id="yellow">[Gabriel Gonzalez: Equational reasoning at scale](http://www.haskellforall.com/2014/07/equational-reasoning-at-scale.html) * </div>
+  Follow up to Gabriel's equational reasoning article. Here he explains how this scales. Very useful article, but you should at least be vaguely familiar with monoids and applicatives before diving in.
 
 * <div id="yellow">[Graham Hutton: A tutorial on the universality and  expressiveness of fold](http://www.cs.nott.ac.uk/~gmh/fold.pdf) * * </div>
   Comprehensive introduction to fold (AKA reduce, insert, inject, etc.), using lists as an example data structure. The reader is expected to know basic functional programming, and I'd recommend not being a stranger to arithmetic and algebra. Haskell is used as an example language, but the code is intended to be generalisable. The paper teaches you to derive functions using fold. This is slightly nontrivial, and I don't recommend this as an introduction to practical use of fold per se. That said, fold (λx g → fold (λy → g) (g [1])) (1 :) is the scariest function you'll encounter here, so it's not *that* scary.
