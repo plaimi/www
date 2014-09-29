@@ -154,6 +154,9 @@ necessary.
 * <div id="yellow">[Sam Lindley & Conor McBride: Hasochism: The Pleasure and Pain of Dependently Typed Haskell Programming](http://homepages.inf.ed.ac.uk/slindley/papers/hasochism.pdf) ** </div>
   Haskell is a crazy type laboratory. Let's make it crazier. Hasochism simulates dependent typing in Haskell, and delivers code that the authors envy as Agda programmers! Before reading this, one should be familiar with the point of dependent types. So maybe check out an Agda or Idris tutorial first.
 
+* <div id="yellow">[Oleg Kiselyov, Simon Peyton Jones & Chung-chieh Shan: Fun with type functions](https://research.microsoft.com/~simonpj/papers/assoc-types/fun-with-type-funs/typefun.pdf) ** </div>
+  A programmer's tour of type families. It's practical and aimed at programmers not researchers. That doesn't mean this is trivial stuff though. I suggest reading some background on injective type families first. Very cool paper. It includes typed sprintf and sscanf that uses the same format descriptor!
+
 * <div id="red">[Cordelia Hall, Kevin Hammond, Simon Peyton Jones & Philip Wadler: Type classes in Haskell](http://ropas.snu.ac.kr/lib/dock/HaHaJoWa1996.pdf) *** </div>
   A precise definition of type classes. Kind of like a Comprehending type classes. See Comprehending monads for a near-equivalent paper for monads.
 
