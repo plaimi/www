@@ -15,72 +15,7 @@ muffins and cookies etc.
 * * *
 #Contact
 ##E-mail:
-<table border="1">
-    <tr>
-        <td> </td>
-        <td>plaimi.net</td>
-        <td>member.fsf.org</td>
-        <td>hig.no</td>
-        <td>cerpus.com</td>
-        <td>gentoo.org</td>
-    </tr>
-    <tr>
-        <td>alex</td>
-        <td>x</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>alexander</td>
-        <td>x</td>
-        <td>-</td>
-        <td>-</td>
-        <td>x</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>alexanderberntsen</td>
-        <td>x</td>
-        <td>x</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>alexander.berntsen</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>x</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>berntsen.alexander</td>
-        <td>x</td>
-        <td>x</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>berntsenalexander</td>
-        <td>x</td>
-        <td>x</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <tr>
-        <td>bernalex</td>
-        <td>x</td>
-        <td>x</td>
-        <td>-</td>
-        <td>-</td>
-        <td>x</td>
-    </tr>
-</table>
+  * See [my GPG info](http://pgp.surfnet.nl:11371/pks/lookup?op=vindex&fingerprint=on&search=0x705073B5)
 
 ##XMPP:
   * alexanderberntsen@dukgo.com
@@ -88,8 +23,6 @@ muffins and cookies etc.
 
 ##Freenode:
   * bernalex
-  * alexander\_\_b
-  * I have registered others, but I almost always use bernalex
 
 * * *
 #CV
