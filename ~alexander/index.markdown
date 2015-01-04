@@ -2,9 +2,6 @@
 title: Alexander
 ---
 
-This is the personal web site of Alexander Berntsen. The views expressed here
-are my personal views, not those of plaimi.
-
 * * *
 #Personal
 
