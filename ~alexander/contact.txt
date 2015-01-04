@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+
+
+Email
+=====
+pub   3072D/705073B5 2012-03-14 [expires: 2017-12-10]
+uid       [ultimate] Alexander Berntsen <alexander@plaimi.net>
+uid       [ultimate] Alexander Berntsen <alexander.berntsen@hig.no>
+uid       [ultimate] Alexander Berntsen <alexander.berntsen@cerpus.com>
+uid       [ultimate] Alexander Berntsen <alexander@cerpus.com>
+uid       [ultimate] Alexander Berntsen <bernalex@member.fsf.org>
+uid       [ultimate] Alexander Berntsen <alexanderberntsen@member.fsf.org>
+uid       [ultimate] Alexander Berntsen <alexander.berntsen@member.fsf.org>
+uid       [ultimate] Alexander Berntsen <berntsenalexander@member.fsf.org>
+uid       [ultimate] Alexander Berntsen <berntsen.alexander@member.fsf.org>
+uid       [ultimate] Alexander Berntsen <alex@plaimi.net>
+uid       [ultimate] Alexander Berntsen <bernalex@plaimi.net>
+uid       [ultimate] Alexander Berntsen <berntsenalexander@plaimi.net>
+uid       [ultimate] Alexander Berntsen <berntsen.alexander@plaimi.net>
+uid       [ultimate] Alexander Berntsen <alexander.berntsen@plaimi.net>
+uid       [ultimate] Alexander Berntsen <alexanderberntsen@plaimi.net>
+uid       [ultimate] Alexander Berntsen <alexanderberntsen@gmail.com>
+uid       [ultimate] Alexander Berntsen <bernalex@gentoo.org>
+uid       [ultimate] Alexander Berntsen <a@plaimi.net>
+sub   3072g/8CE9B8F2 2012-03-14
+
+
+XMPP
+====
+alexanderberntsen@dukgo.com/jabber - DSA C9656ADA 9B680900 09ECB5CB C1DA883E 7DAFE936
+bernalex@member.fsf.org/jabber     - DSA 8644B0CF C95436B0 54457465 47797C6A 0D5CAA7A
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2
+
+iF4EAREIAAYFAlSohj4ACgkQRtClrXBQc7VBhAD+PpsR3645az1g16bUGhNEs/xr
+dWct2/qWlNSww8v1R7wBAKWNO0LCnzvujuwGX8odl8yHS3vSSukLZHBnyfb3O3NE
+=dt6Y
+-----END PGP SIGNATURE-----

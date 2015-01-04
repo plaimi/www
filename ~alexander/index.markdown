@@ -14,15 +14,11 @@ muffins and cookies etc.
 
 * * *
 #Contact
-##E-mail:
-  * See [my GPG info](http://pgp.surfnet.nl:11371/pks/lookup?op=vindex&fingerprint=on&search=0x705073B5)
-
-##XMPP:
-  * alexanderberntsen@dukgo.com
-  * bernalex@member.fsf.org
-
-##Freenode:
-  * bernalex
+  * Freenode (IRC): bernalex
+  * Email: See [contact.txt](contact.txt).
+  * XMPP: See [contact.txt](contact.txt).
+  * Please encrypt your communication with me! [contact.txt](contact.txt) has
+  my OpenPGP and OTR information.
 
 * * *
 #CV
