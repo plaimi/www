@@ -42,7 +42,9 @@ main = hakyllWith configuration $ do
     route   idRoute
     compile compressCssCompiler
 
-  match "~alexander/contact.txt" $ do
+  match (fromList ["~alexander/contact.txt"
+                  ,"~olle/contact.txt"
+                  ]) $ do
     route   idRoute
     compile copyFileCompiler
 

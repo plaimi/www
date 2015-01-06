@@ -1,0 +1,35 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+
+
+Email
+=====
+pub   rsa4096/2784CF82 2014-12-18 [expires: 2019-12-17]
+uid       [ultimate] Olle Fredriksson <olle@plaimi.net>
+uid       [ultimate] Olle Fredriksson <fredriksson.olle@gmail.com>
+sub   rsa4096/BC632197 2014-12-18 [expires: 2019-12-17]
+
+
+XMPP
+====
+olle@plaimi.net/jabber - DSA 7123D08E BB7CDC13 9DC90209 0A7AA773 5E7C5228
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2
+
+iQIcBAEBCAAGBQJUq9heAAoJECQpGd8nhM+C2k4P/i+LxhKORaQGD81YqhzRuLN7
+20w0umdg7Og0BOYuczuUlbtQWXbfJQXV1k6kruSwz2ftlj9SKt4jV9ycG81VVuWP
+gGswSfH/8PQTVsmMuCTxqufjeWp3yByFcAV4y+jnRezKq7plb247bWLO9HWJHFQ1
+3B7C/Y/FPr1ABb4KOWbEEskYqtUexDhxQmSTCRm382tJWZFniEK9Nh56gms6lWEp
+gvLdLEa5TNGGKEjhJqZmjPsGpjKfKlzPdZJghxSgWexuPzntOKeaEAwAT5c08fLu
+dNLXkA+6EFnm+eVj29AwoTOYvx9opd1smONaPLvs+eNjHJuTnAStahTo6unkbGHu
+i4UddAMyn14+jK57s1hePyj8xx3GDTwlKzfnbfpeZeB6KXlqtscsM6umONokCdPG
+dLHD4bXW3BWTuBtavyJ5GZfA4UFOTKVF92m4s3nPGIeSp0LkPjIypTNtx3GZ+nvv
+XbX+ds5YEEblnLJFFQbELsSFwb2KlO7L9Ich+orAC1IBxP2VxC0gMiWVEu5Irvxw
+Vf3Grx9hSVoX2ifw0ionqeLaOnb2WFut7hc1SJNP+CELlsNlpZBnAMBd3FOPJPRK
+8rRwNl4sPvBWLQPF9+GVpBLh8d5flBJoQVJDHjPK/lZnfGwBCux7+jxO3FlsIlNf
+jVHoGu8B5wi+wRdG/4/+
+=8L2O
+-----END PGP SIGNATURE-----
