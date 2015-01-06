@@ -48,6 +48,10 @@ main = hakyllWith configuration $ do
     route   idRoute
     compile copyFileCompiler
 
+  match "~olle/contact.txt" $ do
+    route   idRoute
+    compile copyFileCompiler
+
 
   match (fromList ["about.markdown"
                   ,"contact.markdown"
