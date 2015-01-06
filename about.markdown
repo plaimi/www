@@ -15,3 +15,5 @@ many different things.
 
 plaimi became a registered joint-stock company under the Cerpus group in 
 January 2014.
+
+In 2015 we were joined by [Olle](~olle).
