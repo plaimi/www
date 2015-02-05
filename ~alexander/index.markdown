@@ -6,8 +6,7 @@ title: Alexander
 #Personal
 
 Alexander Berntsen is a free software hacker wizard that lives in Gjøvik,
-Norway with his cohabitant, Mette Pernille, who occasionally bakes him
-muffins and cookies etc.
+Norway.
 
 * * *
 #Contact
