@@ -87,16 +87,16 @@ interest. My current favourite is Haskell, and I keep a collection of
 [recommended Haskell reading and watching](haskell.html).
 
 As a curiosity, see the
-[language overview](https://www.ohloh.net/accounts/alexanderb/languages) on
-ohloh. It is a reasonable good account of how many lines of public code I 
-have in different languages. This site has aggregated this from the 
+[language overview](https://www.openhub.net/accounts/alexanderb/languages) on
+openhub. It is a reasonable account of how many lines of public code I 
+have in different languages. This site has aggregated its figures from the 
 repositories of currently publicly available code. Of course, I have written
 code that is not publicly available (especially while learning a new
-language), so take these figures with buckets of salt. They are however, quite
-interesting to me. They paint a reasonable picture of what languages I am
-using for "real world work".
+language), so take these figures with buckets of salt. They paint a reasonable
+picture of what languages I am using for "real world work".
 
 Another curiosity would be the
 [skills & knowledge](https://www.linkedin.com/in/hackerwizard) people have
 endorsed me for on linkedin. I'm not sure I agree with all of them, but it's
-interesting to see what people at least *think* I am good at.
+interesting to see what people at least *think* I am good at. Apparently I'm a 
+wizard.
