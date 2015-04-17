@@ -1,0 +1,6 @@
+---
+title: Big website update
+---
+Papers and presentations are now available through our website. And all of our
+projects regardless of type are listed on the new [projects](/projects.html) 
+site.
