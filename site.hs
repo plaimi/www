@@ -9,29 +9,95 @@
 
 {-# LANGUAGE OverloadedStrings #-}
 
-import Control.Monad (filterM)
-import Data.Monoid ((<>))
+import Control.Monad
+  (
+  filterM,
+  )
+import Data.Monoid
+  (
+  (<>),
+  )
+import Hakyll.Core.Configuration
+  (
+  Configuration,
+  defaultConfiguration,
+  deployCommand,
+  )
+import Hakyll.Core.Compiler
+  (
+  getResourceBody,
+  loadAll,
+  makeItem,
+  )
+import Hakyll.Core.File
+  (
+  copyFileCompiler,
+  )
+import Hakyll.Core.Identifier.Pattern
+  (
+  fromList,
+  )
+import Hakyll.Core.Item
+  (
+  Item,
+  itemIdentifier,
+  )
+import Hakyll.Core.Metadata
+  (
+  MonadMetadata,
+  getMetadataField,
+  )
+import Hakyll.Core.Routes
+  (
+  idRoute,
+  setExtension,
+  )
+import Hakyll.Core.Rules
+  (
+  compile,
+  create,
+  match,
+  route,
+  )
+import Hakyll.Main
+  (
+  hakyllWith,
+  )
+import Hakyll.Web.CompressCss
+  (
+  compressCssCompiler,
+  )
+import Hakyll.Web.Html.RelativizeUrls
+  (
+  relativizeUrls,
+  )
+import Hakyll.Web.Pandoc
+  (
+  pandocCompiler,
+  )
+import Hakyll.Web.Template
+  (
+  applyAsTemplate,
+  loadAndApplyTemplate,
+  templateCompiler,
+  )
+import Hakyll.Web.Template.Context
+  (
+  constField,
+  dateField,
+  defaultContext,
+  listField,
+  )
+import Hakyll.Web.Template.List
+  (
+  recentFirst,
+  )
 
-import Hakyll.Core.Configuration (Configuration, defaultConfiguration
-                                 ,deployCommand)
-import Hakyll.Core.Compiler (getResourceBody, loadAll, makeItem)
-import Hakyll.Core.File (copyFileCompiler)
-import Hakyll.Core.Identifier.Pattern (fromList)
-import Hakyll.Core.Item (Item, itemIdentifier)
-import Hakyll.Core.Metadata (MonadMetadata, getMetadataField)
-import Hakyll.Core.Routes (idRoute, setExtension)
-import Hakyll.Core.Rules (compile, create, match, route)
-import Hakyll.Main (hakyllWith)
-import Hakyll.Web.CompressCss (compressCssCompiler)
-import Hakyll.Web.Html.RelativizeUrls (relativizeUrls)
-import Hakyll.Web.Pandoc (pandocCompiler)
-import Hakyll.Web.Template (applyAsTemplate, loadAndApplyTemplate
-                           ,templateCompiler)
-import Hakyll.Web.Template.Context (constField, dateField, defaultContext
-                                   ,listField)
-import Hakyll.Web.Template.List (recentFirst)
-
-import Config (synchCommand, synchTarget)
+import Config
+  (
+  synchCommand,
+  synchTarget,
+  )
 
 main ::  IO ()
 main = hakyllWith configuration $ do
