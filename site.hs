@@ -54,6 +54,7 @@ import Hakyll.Core.Routes
   )
 import Hakyll.Core.Rules
   (
+  Rules,
   compile,
   create,
   match,
@@ -103,9 +104,7 @@ main ::  IO ()
 main = hakyllWith configuration $ do
   match "templates/*" $ compile templateCompiler
 
-  match "images/*" $ do
-    route   idRoute
-    compile copyFileCompiler
+  match "images/*" copyFiles
 
   match "css/*" $ do
     route   idRoute
@@ -113,13 +112,7 @@ main = hakyllWith configuration $ do
 
   match (fromList ["~alexander/contact.txt"
                   ,"~olle/contact.txt"
-                  ]) $ do
-    route   idRoute
-    compile copyFileCompiler
-
-  match "~olle/contact.txt" $ do
-    route   idRoute
-    compile copyFileCompiler
+                  ]) copyFiles
 
   match (fromList ["about.markdown"
                   ,"contact.markdown"
@@ -287,9 +280,7 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
-  match "papers/*.pdf" $ do
-    route   idRoute
-    compile copyFileCompiler
+  match "papers/*.pdf" copyFiles
 
   create ["papers.html"] $ do
     route   idRoute
@@ -311,9 +302,7 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html"      defaultContext
         >>= relativizeUrls
 
-  match "presentations/*pdf" $ do
-    route   idRoute
-    compile copyFileCompiler
+  match "presentations/*pdf" copyFiles
 
   create ["presentations.html"] $ do
     route   idRoute
@@ -328,6 +317,8 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html"           archiveCtx
         >>= relativizeUrls
 
+copyFiles :: Rules ()
+copyFiles = route idRoute >> compile copyFileCompiler
 
 filterType :: (Functor f, MonadMetadata f) => String -> [Item a] -> f [Item a]
 filterType t = filterM ((\_ -> fmap (maybe False (== t)) .
