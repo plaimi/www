@@ -13,6 +13,10 @@ import Control.Monad
   (
   filterM,
   )
+import Data.Char
+  (
+  toUpper,
+  )
 import Data.Monoid
   (
   (<>),
@@ -39,6 +43,7 @@ import Hakyll.Core.Identifier
   )
 import Hakyll.Core.Identifier.Pattern
   (
+  Pattern,
   fromList,
   )
 import Hakyll.Core.Item
@@ -131,6 +136,10 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
+  create ["works.html"] $ toCategoryHtml "works/*.markdown" "works" "work"
+  create ["games.html"] $ toCategoryHtml "games/*.markdown" "games" "game"
+  create ["other.html"] $ toCategoryHtml "other/*.markdown" "other" "other"
+
   match "index.html" $ do
     route   idRoute
     compile $ do
@@ -216,42 +225,6 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html"   archiveCtx
         >>= relativizeUrls
 
-  create ["games.html"] $ do
-    route   idRoute
-    compile $ do
-      games <- loadAll "games/*"
-      let gamesCtx = listField "games" defaultContext (return games) <>
-                     constField "title" "Games"                      <>
-                     defaultContext
-      makeItem ""
-        >>= loadAndApplyTemplate "templates/game-list.html" gamesCtx
-        >>= loadAndApplyTemplate "templates/default.html"   gamesCtx
-        >>= relativizeUrls
-
-  create ["works.html"] $ do
-    route   idRoute
-    compile $ do
-      works <- loadAll "works/*"
-      let worksCtx = listField "works" defaultContext (return works) <>
-                     constField "title" "Works"                      <>
-                     defaultContext
-      makeItem ""
-        >>= loadAndApplyTemplate "templates/work-list.html" worksCtx
-        >>= loadAndApplyTemplate "templates/default.html"   worksCtx
-        >>= relativizeUrls
-
-  create ["other.html"] $ do
-    route   idRoute
-    compile $ do
-      other <- loadAll "other/*"
-      let otherCtx = listField "other" defaultContext (return other) <>
-                     constField "title" "Other"                      <>
-                     defaultContext
-      makeItem ""
-        >>= loadAndApplyTemplate "templates/other-list.html" otherCtx
-        >>= loadAndApplyTemplate "templates/default.html"    otherCtx
-        >>= relativizeUrls
-
   create ["papers.html"] $ do
     route   idRoute
     compile $ do
@@ -277,6 +250,20 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/presentation-list.html" archiveCtx
         >>= loadAndApplyTemplate "templates/default.html"           archiveCtx
         >>= relativizeUrls
+
+toCategoryHtml :: Pattern -> String -> String -> Rules ()
+toCategoryHtml p f t = do
+  route idRoute
+  compile $ do
+    u <- loadAll p
+    let ctx = listField f defaultContext (return u)
+           <> constField "title" (toUpper (head f) : tail f)
+           <> defaultContext
+    makeItem "" >>= loadAndApplyTemplate (fromFilePath $ "templates/"
+                                                      ++ t
+                                                      ++ "-list.html") ctx
+                >>= loadAndApplyTemplate "templates/default.html"      ctx
+                >>= relativizeUrls
 
 mdToHtml :: String -> Rules ()
 mdToHtml t = do
