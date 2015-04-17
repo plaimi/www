@@ -1,3 +1,5 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 {-
 - Copyright (C) 2013-2015 plaimi <www@plaimi.net>
 -
@@ -6,8 +8,6 @@
 - notice and this notice are preserved.  This file is offered as-is,
 - without any warranty.
 -}
-
-{-# LANGUAGE OverloadedStrings #-}
 
 import Control.Monad
   (
