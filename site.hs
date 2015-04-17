@@ -111,18 +111,23 @@ import Config
 
 main ::  IO ()
 main = hakyllWith configuration $ do
+
+  -- Templates
   match "templates/*" $ compile templateCompiler
 
+  -- CSS
   match "css/*" $ do
     route   idRoute
     compile compressCssCompiler
 
+  -- Pure file copy.
   match (fromList ["~alexander/contact.txt"
                   ,"~olle/contact.txt"
                   ]) copyFiles
 
-  match "papers/*.pdf" copyFiles
-  match "images/*" copyFiles
+  -- Pure file copy with globs.
+  match "papers/*.pdf"       copyFiles
+  match "images/*"           copyFiles
   match "presentations/*pdf" copyFiles
 
   match (fromList ["about.markdown"
@@ -136,10 +141,23 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
+  -- Markdown to HTML with template applied.
+  match "projects/*.markdown"      $ mdToHtml "project"
+  match "news/*.markdown"          $ mdToHtml "news"
+  match "works/*.markdown"         $ mdToHtml "work"
+  match "games/*.markdown"         $ mdToHtml "game"
+  match "papers/*.markdown"        $ mdToHtml "paper"
+  match "presentations/*.markdown" $ mdToHtml "presentation"
+  match "other/*.markdown"         $ mdToHtml "other"
+
+  -- Markdown to more category HTML sites. Category sites list all entries in
+  -- that specific category.
   create ["works.html"] $ toCategoryHtml "works/*.markdown" "works" "work"
   create ["games.html"] $ toCategoryHtml "games/*.markdown" "games" "game"
   create ["other.html"] $ toCategoryHtml "other/*.markdown" "other" "other"
 
+  -- Markdown to archive HTML sites. Archives are like category sites but
+  -- date-sorted.
   create ["news.html"]          $ toArchiveHtml "news/*.markdown"
                                                 "news" "news"
   create ["papers.html"]        $ toArchiveHtml "papers/*.markdown"
@@ -147,6 +165,7 @@ main = hakyllWith configuration $ do
   create ["presentations.html"] $ toArchiveHtml "presentations/*.markdown"
                                                 "presentations" "presentation"
 
+  -- index.html. It's messy. Sorry.
   match "index.html" $ do
     route   idRoute
     compile $ do
@@ -191,14 +210,7 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
-  match "projects/*.markdown" $ mdToHtml "project"
-  match "news/*" $ mdToHtml "news"
-  match "works/*" $ mdToHtml "work"
-  match "games/*" $ mdToHtml "game"
-  match "papers/*.markdown" $ mdToHtml "paper"
-  match "presentations/*.markdown" $ mdToHtml "presentation"
-  match "other/*" $ mdToHtml "other"
-
+  -- projects.html: list of all projects.
   create ["projects.html"] $ do
     route   idRoute
     compile $ do
