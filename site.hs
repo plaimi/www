@@ -33,6 +33,10 @@ import Hakyll.Core.File
   (
   copyFileCompiler,
   )
+import Hakyll.Core.Identifier
+  (
+  fromFilePath,
+  )
 import Hakyll.Core.Identifier.Pattern
   (
   fromList,
@@ -169,12 +173,13 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
-  match "projects/*.markdown" $ do
-    route $ setExtension "html"
-    compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/project.html" defaultContext
-        >>= loadAndApplyTemplate "templates/default.html" defaultContext
-        >>= relativizeUrls
+  match "projects/*.markdown" $ mdToHtml "project"
+  match "news/*" $ mdToHtml "news"
+  match "works/*" $ mdToHtml "work"
+  match "games/*" $ mdToHtml "game"
+  match "papers/*.markdown" $ mdToHtml "paper"
+  match "presentations/*.markdown" $ mdToHtml "presentation"
+  match "other/*" $ mdToHtml "other"
 
   create ["projects.html"] $ do
     route   idRoute
@@ -196,13 +201,6 @@ main = hakyllWith configuration $ do
                   >>= loadAndApplyTemplate "templates/default.html"      ctx
                   >>= relativizeUrls
 
-  match "news/*" $ do
-    route $ setExtension "html"
-    compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/news.html"    defaultContext
-        >>= loadAndApplyTemplate "templates/default.html" defaultContext
-        >>= relativizeUrls
-
   create ["news.html"] $ do
     route   idRoute
     compile $ do
@@ -214,13 +212,6 @@ main = hakyllWith configuration $ do
       makeItem ""
         >>= loadAndApplyTemplate "templates/news-list.html" archiveCtx
         >>= loadAndApplyTemplate "templates/default.html"   archiveCtx
-        >>= relativizeUrls
-
-  match "games/*" $ do
-    route $ setExtension "html"
-    compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/game.html"    defaultContext
-        >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
   create ["games.html"] $ do
@@ -235,13 +226,6 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html"   gamesCtx
         >>= relativizeUrls
 
-  match "works/*" $ do
-    route $ setExtension "html"
-    compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/work.html"    defaultContext
-        >>= loadAndApplyTemplate "templates/default.html" defaultContext
-        >>= relativizeUrls
-
   create ["works.html"] $ do
     route   idRoute
     compile $ do
@@ -254,13 +238,6 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html"   worksCtx
         >>= relativizeUrls
 
-  match "other/*" $ do
-    route $ setExtension "html"
-    compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/other.html"   defaultContext
-        >>= loadAndApplyTemplate "templates/default.html" defaultContext
-        >>= relativizeUrls
-
   create ["other.html"] $ do
     route   idRoute
     compile $ do
@@ -271,13 +248,6 @@ main = hakyllWith configuration $ do
       makeItem ""
         >>= loadAndApplyTemplate "templates/other-list.html" otherCtx
         >>= loadAndApplyTemplate "templates/default.html"    otherCtx
-        >>= relativizeUrls
-
-  match "papers/*.markdown" $ do
-    route $ setExtension "html"
-    compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/paper.html"  defaultContext
-        >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
   match "papers/*.pdf" copyFiles
@@ -295,13 +265,6 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html"    archiveCtx
         >>= relativizeUrls
 
-  match "presentations/*.markdown" $ do
-    route $ setExtension "html"
-    compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/presentation.html" defaultContext
-        >>= loadAndApplyTemplate "templates/default.html"      defaultContext
-        >>= relativizeUrls
-
   match "presentations/*pdf" copyFiles
 
   create ["presentations.html"] $ do
@@ -316,6 +279,14 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/presentation-list.html" archiveCtx
         >>= loadAndApplyTemplate "templates/default.html"           archiveCtx
         >>= relativizeUrls
+
+mdToHtml :: String -> Rules ()
+mdToHtml t = do
+  route $ setExtension "html"
+  compile $ pandocCompiler
+    >>= loadAndApplyTemplate (fromFilePath $ "templates/" ++ t ++ ".html") defaultContext
+    >>= loadAndApplyTemplate "templates/default.html"       defaultContext
+    >>= relativizeUrls
 
 copyFiles :: Rules ()
 copyFiles = route idRoute >> compile copyFileCompiler
