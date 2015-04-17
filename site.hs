@@ -108,8 +108,6 @@ main ::  IO ()
 main = hakyllWith configuration $ do
   match "templates/*" $ compile templateCompiler
 
-  match "images/*" copyFiles
-
   match "css/*" $ do
     route   idRoute
     compile compressCssCompiler
@@ -117,6 +115,10 @@ main = hakyllWith configuration $ do
   match (fromList ["~alexander/contact.txt"
                   ,"~olle/contact.txt"
                   ]) copyFiles
+
+  match "papers/*.pdf" copyFiles
+  match "images/*" copyFiles
+  match "presentations/*pdf" copyFiles
 
   match (fromList ["about.markdown"
                   ,"contact.markdown"
@@ -250,8 +252,6 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/default.html"    otherCtx
         >>= relativizeUrls
 
-  match "papers/*.pdf" copyFiles
-
   create ["papers.html"] $ do
     route   idRoute
     compile $ do
@@ -264,8 +264,6 @@ main = hakyllWith configuration $ do
         >>= loadAndApplyTemplate "templates/paper-list.html" archiveCtx
         >>= loadAndApplyTemplate "templates/default.html"    archiveCtx
         >>= relativizeUrls
-
-  match "presentations/*pdf" copyFiles
 
   create ["presentations.html"] $ do
     route   idRoute
