@@ -67,8 +67,6 @@ The timeline will consist of merely “nearly” all articles, because not
 every article has time metadata. The ones that do may however be scraped
 for such metadata via DBpedia. We have already done that.
 
-<span>0.3</span>
-
 The reason we want one colossal timeline is so that the users themselves
 can judge what information is relevant through filtering the timespans
 contained within the timeline.
@@ -79,16 +77,12 @@ of the user interface presented in January. This figure demonstrates the
 problem of having Wikipedia as solely a visual timeline – too much data!
 It’s positively bewildering. Not cool.
 
-<span>0.3</span>
-
 Using all of DBpedia without the option to filter on categories would be
 cumbersome at best. While filtering was not present functionality in the
 January presentation, we have taken the liberty of augmenting the design
 in Figure [fig:filtered]. This allows fine-grained control of what data
 is presently presented. Now we have an interactive visual timeline –
 very cool.
-
-<span>0.5</span>
 
 Additionally, it might be interesting to see articles that are related
 but not necessary in the same categories. Consequently there should be a
@@ -97,13 +91,9 @@ of these. We have illustrated this in Figure [fig:filteropss], but
 concede that a professional user interface designer might be capable of
 expressing this more pleasantly.
 
-<span>0.5</span>
-
 The massive amount of data comes with a massive amount of categories for
 cataloguing purposes. A filter of filters is thus necessitated, as
 illustrated in Figure [fig:filters].
-
-<span>0.3</span>
 
 Finally, Figure [fig:focussed] shows an expanded timespan, wherein the
 preamble of the relevant Wikipedia article is displayed along with the
