@@ -1,5 +1,6 @@
 ---
 title: オートちゃん
+type: work
 ---
 ![](/images/authochan.png "オートちゃん mascot")
 

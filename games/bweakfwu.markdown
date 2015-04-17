@@ -1,5 +1,6 @@
 ---
 title: bweakfwu
+type: game
 ---
 ![](/images/bweakfwu.png "bweakfwu screenshot")
 

@@ -1,5 +1,6 @@
 ---
 title: plailude
+type: work
 ---
 plailude is plaimi's prelude. it includes useful functions we use internally 
 for developing in Haskell.

@@ -1,5 +1,6 @@
 ---
 title: limbs off
+type: game
 ---
 ![](/images/limbs-off.png "limbs off screenshot")
 

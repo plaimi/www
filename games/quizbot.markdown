@@ -1,5 +1,6 @@
 ---
 title: quizbot
+type: game
 ---
 
 simple quizbot for IRC.  

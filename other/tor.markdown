@@ -1,5 +1,6 @@
 ---
 title: Tor relay
+type: other
 ---
 ![](/images/tor.svg "Tor logo")
 

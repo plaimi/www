@@ -1,5 +1,6 @@
 ---
 title: tempuhs
+type: work
 ---
 tempuhs is a chronicler.
 
