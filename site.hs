@@ -140,6 +140,13 @@ main = hakyllWith configuration $ do
   create ["games.html"] $ toCategoryHtml "games/*.markdown" "games" "game"
   create ["other.html"] $ toCategoryHtml "other/*.markdown" "other" "other"
 
+  create ["news.html"]          $ toArchiveHtml "news/*.markdown"
+                                                "news" "news"
+  create ["papers.html"]        $ toArchiveHtml "papers/*.markdown"
+                                                "papers" "paper"
+  create ["presentations.html"] $ toArchiveHtml "presentations/*.markdown"
+                                                "presentations" "presentation"
+
   match "index.html" $ do
     route   idRoute
     compile $ do
@@ -212,44 +219,20 @@ main = hakyllWith configuration $ do
                   >>= loadAndApplyTemplate "templates/default.html"      ctx
                   >>= relativizeUrls
 
-  create ["news.html"] $ do
-    route   idRoute
-    compile $ do
-      news <- recentFirst =<< loadAll "news/*"
-      let newsCtx    = dateField "date" "%B %e, %Y" <> defaultContext
-      let archiveCtx = listField "news"  newsCtx (return news) <>
-                       constField "title" "News"               <>
-                       defaultContext
-      makeItem ""
-        >>= loadAndApplyTemplate "templates/news-list.html" archiveCtx
-        >>= loadAndApplyTemplate "templates/default.html"   archiveCtx
-        >>= relativizeUrls
-
-  create ["papers.html"] $ do
-    route   idRoute
-    compile $ do
-      papers <- recentFirst =<< loadAll "papers/*.markdown"
-      let papersCtx  = dateField "date" "%B %e, %Y" <> defaultContext
-      let archiveCtx = listField "papers"  papersCtx (return papers)
-                    <> constField "title" "Papers"
-                    <> defaultContext
-      makeItem ""
-        >>= loadAndApplyTemplate "templates/paper-list.html" archiveCtx
-        >>= loadAndApplyTemplate "templates/default.html"    archiveCtx
-        >>= relativizeUrls
-
-  create ["presentations.html"] $ do
-    route   idRoute
-    compile $ do
-      pres <- recentFirst =<< loadAll "presentations/*.markdown"
-      let presCtx  = dateField "date" "%B %e, %Y" <> defaultContext
-      let archiveCtx = listField "presentations"  presCtx (return pres)
-                    <> constField "title" "Presentations"
-                    <> defaultContext
-      makeItem ""
-        >>= loadAndApplyTemplate "templates/presentation-list.html" archiveCtx
-        >>= loadAndApplyTemplate "templates/default.html"           archiveCtx
-        >>= relativizeUrls
+toArchiveHtml :: Pattern -> String -> String -> Rules ()
+toArchiveHtml p f t = do
+  route idRoute
+  compile $ do
+    u <- recentFirst =<< loadAll p
+    let ctx  = dateField "date" "%B %e, %Y" <> defaultContext
+    let actx = listField f ctx (return u)
+            <> constField "title" (toUpper (head f) : tail f)
+            <> defaultContext
+    makeItem "" >>= loadAndApplyTemplate (fromFilePath $ "templates/"
+                                                      ++ t
+                                                      ++ "-list.html") actx
+                >>= loadAndApplyTemplate "templates/default.html"      actx
+                >>= relativizeUrls
 
 toCategoryHtml :: Pattern -> String -> String -> Rules ()
 toCategoryHtml p f t = do
