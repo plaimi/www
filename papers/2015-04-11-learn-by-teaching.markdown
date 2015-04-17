@@ -3,7 +3,7 @@ title: Learn By Teaching, or, Imitation Is the Sincerest Form of Flattery, or, R
 type: paper
 author: Alexander Berntsen & Emil Henry Flakk
 ---
-[Download full paper with table of contents, references, etc.](https://secure.plaimi.net/papers/2015-04-11-learn-by-teaching.pdf)
+[Download full paper with table of contents, references, etc.](/papers/2015-04-11-learn-by-teaching.pdf)
 
 In an effort to foster learning by teaching, we propose the development
 of a canvas system that makes authoring e-learning modules intuitive. We

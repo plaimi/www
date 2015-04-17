@@ -3,7 +3,7 @@ title: More polymorphism
 type: presentation
 author: Alexander Berntsen (with help & exercises from Olle Fredriksson)
 ---
-[Download full presentation](https://secure.plaimi.net/presentations/2015-04-09-more-polymorphism.pdf)
+[Download full presentation](/presentations/2015-04-09-more-polymorphism.pdf)
 
 A presentation called "More polymorphism" given by Alexander at the
 Oslo-Haskell meetup. Olle assisted the presentation, and also wrote some 
