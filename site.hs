@@ -181,18 +181,18 @@ main = hakyllWith configuration $ do
       let newsCtx  = dateField "date" "%B %e, %Y"
                   <> defaultContext
       let gameCtx  = listField "games"         defaultContext (return games)
-                  <> defaultContext          
+                  <> defaultContext
       let workCtx  = listField "works"         defaultContext (return works)
-                  <> defaultContext          
+                  <> defaultContext
       let paperCtx = dateField "date" "%B %e, %Y"
                   <> listField "papers"        defaultContext (return papers)
-                  <> defaultContext          
+                  <> defaultContext
       let presCtx  = dateField "date" "%B %e, %Y"
                   <> listField "presentations" defaultContext (return pres)
-                  <> defaultContext          
+                  <> defaultContext
       let otherCtx = listField "other"         defaultContext (return other)
-                  <> defaultContext          
-      let indexCtx = listField "news"          newsCtx        (return news) 
+                  <> defaultContext
+      let indexCtx = listField "news"          newsCtx        (return news)
                   <> listField "works"         workCtx        (return works)
                   <> listField "games"         gameCtx        (return games)
                   <> listField "papers"        paperCtx       (return papers)
@@ -225,7 +225,7 @@ main = hakyllWith configuration $ do
              <> listField "works"         defaultContext (return works)
              <> listField "papers"        defaultContext (return papers)
              <> listField "presentations" defaultContext (return pres)
-             <> listField "other"         defaultContext (return other) 
+             <> listField "other"         defaultContext (return other)
              <> defaultContext
       makeItem "" >>= loadAndApplyTemplate "templates/project-list.html" ctx
                   >>= loadAndApplyTemplate "templates/default.html"      ctx
