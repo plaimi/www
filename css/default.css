@@ -3,6 +3,7 @@ body {
     background-color: #012345;
     font-size: 16px;
     margin: 0px auto 0px auto;
+    min-width: 680px;
     width: 60%;
     background-image: url("../images/logo.svg");
     background-position: 100% 50%;
