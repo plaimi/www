@@ -15,7 +15,6 @@ div#content {
     background-color: #123456;
     border: 2px solid #999;
     padding: 20px 20px 20px 20px;
-    min-height: 512px;
 }
 
 div#header {
