@@ -169,15 +169,12 @@ main = hakyllWith configuration $ do
   match "index.html" $ do
     route   idRoute
     compile $ do
-      let projects = loadAll "projects/*"
-      news        <- recentFirst               =<< loadAll "news/*"
-      games       <- filterType "game"         =<< projects
-      works       <- filterType "work"         =<< projects
-      papers      <- recentFirst               =<< filterType "paper"
-                                               =<< projects
-      pres        <- recentFirst               =<< filterType "presentation"
-                                               =<< projects
-      other       <- filterType "other"        =<< projects
+      news        <- recentFirst =<< loadAll "news/*.markdown"
+      games       <-                 loadAll "games/*.markdown"
+      works       <-                 loadAll "works/*.markdown"
+      papers      <- recentFirst =<< loadAll "papers/*.markdown"
+      pres        <- recentFirst =<< loadAll "presentations/*.markdown"
+      other       <-                 loadAll "other/*.markdown"
       let newsCtx  = dateField "date" "%B %e, %Y"
                   <> defaultContext
       let gameCtx  = listField "games"         defaultContext (return games)
@@ -214,12 +211,11 @@ main = hakyllWith configuration $ do
   create ["projects.html"] $ do
     route   idRoute
     compile $ do
-      let projects = loadAll "projects/*"
-      games       <- filterType "game"         =<< projects
-      works       <- filterType "work"         =<< projects
-      papers      <- filterType "paper"        =<< projects
-      pres        <- filterType "presentation" =<< projects
-      other       <- filterType "other"        =<< projects
+      games  <-                 loadAll "games/*.markdown"
+      works  <-                 loadAll "works/*.markdown"
+      papers <- recentFirst =<< loadAll "papers/*.markdown"
+      pres   <- recentFirst =<< loadAll "presentations/*.markdown"
+      other  <-                 loadAll "other/*.markdown"
       let ctx = constField "title" "Projects"
              <> listField "games"         defaultContext (return games)
              <> listField "works"         defaultContext (return works)

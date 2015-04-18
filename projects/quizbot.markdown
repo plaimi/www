@@ -1,1 +1,0 @@
-../games/quizbot.markdown

@@ -1,1 +1,0 @@
-../presentations/2014-12-18-tempuhs-status-update.markdown
