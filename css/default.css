@@ -61,10 +61,12 @@ div.info {
 
 h1 {
     font-size: 24px;
+    width: 24em;
 }
 
 h2 {
     font-size: 20px;
+    width: 20em;
 }
 
 a:link {
@@ -123,5 +125,9 @@ a:visited {
 }
 
 p {
+    width: 33em;
+}
+
+li {
     width: 33em;
 }
