@@ -3,7 +3,8 @@ title: Froskell programming language
 type: paper
 author: Alexander Berntsen, Stian Ellingsen & Olle Fredriksson
 ---
-[Download full paper with table of contents, figures, references, etc.](/papers/2015-01-16-froskell-programming-language.pdf)
+[Download full paper with table of contents, figures, references, etc.](/papers/2015-01-16-froskell-programming-language.pdf)  
+[Repository with LaTeX2ε source and commit history](https://github.com/plaimi/froskell-idea)
 
 Due to the inherent complexity of computers and computer programs,
 bog-standard computer users are destitute for knowledge. Learning how to

@@ -3,7 +3,8 @@ title: An interactive & visual generic timeline encompassing (nearly) every Wiki
 type: paper
 author: Alexander Berntsen & Olle Fredriksson
 ---
-[Download full paper with table of contents, figures, references, etc.](/papers/2015-04-11-visual-wikipedia-timeline.pdf)
+[Download full paper with table of contents, figures, references, etc.](/papers/2015-04-11-visual-wikipedia-timeline.pdf)  
+[Repository with LaTeX2ε source and commit history](https://github.com/plaimi/visual-wikipedia-timeline)
 
 We can generate pleasant interactive timelines for most of the articles
 on Wikipedia. This is afforded through scraping DBpedia for semantic
