@@ -33,12 +33,14 @@ programming game systems in Haskell. 2014.
 
 ##Engagements
 * plaimi. Hacker wizard. 2010 - present.  
-Game design.  
-Game programming.  
-Source code management and maintenance.  
-Infrastructure management and maintenance.  
+Hacking.  
+Research.  
+Asking people to fund our hacking and research.  
 Project coordination.  
 Mentoring.  
+Game design.  
+Mascot design.  
+Talks & presentations.  
 Founding and running the free software lab (flab).
 
 * plaimi. Managing Director/Chief Executive Officer. 2014 - present.  
