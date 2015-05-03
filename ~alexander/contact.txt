@@ -1,7 +1,5 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-
+Hash: SHA512
 
 Email
 =====
@@ -25,6 +23,7 @@ uid       [ultimate] Alexander Berntsen <alexanderberntsen@gmail.com>
 uid       [ultimate] Alexander Berntsen <bernalex@gentoo.org>
 uid       [ultimate] Alexander Berntsen <a@plaimi.net>
 sub   3072g/8CE9B8F2 2012-03-14
+sub   4096R/541A4F01 2015-04-20 [expires: 2016-04-19]
 
 
 XMPP
@@ -37,7 +36,17 @@ bernalex@member.fsf.org/jabber     - DSA 8644B0CF C95436B0 54457465 47797C6A 0D5
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v2
 
-iF4EAREIAAYFAlSrv2MACgkQRtClrXBQc7X/5QEAgyoyIQgOXVgxnEW8NC0vL44a
-Mq1o3zUDLjG3uvwjVMoA/2JrlbINAp0BGmlCIWw1821V+JWjInvFZXqjEhOedh5+
-=swU3
+iQIcBAEBCgAGBQJVRi8zAAoJENQqWdRUGk8BVSYP/3jp13fd5DR8qJjGo0by9fb9
+cAWA6fzrtdd8kmmCcdhRR9czrE4uZD8q9W4OSBmtQtNqCGBodVUxO+0eiT+njGP8
+nT0YbCMUnHe4a2jsf8YfMt2cxNf5ustAJiXrkIZgHiZU/zHb+agBjXsQLjtv3mSw
+1xkW+pEn3ulvHztL0qZGvycQNoOb7zttecXE5OOArm4OkA0JnGe4IyEOpwS8O+E1
+GATWTTfrW8qE/cgCcCp/4B/DPY4XW+hbPqclY4DmFh6yKnxtic0BnhCBP6IiiujD
+cq/kxQQ9tPCgAwR2fh7n6zbj4srlGAgXzzs4Dw13tSu1IAB/EggMsfNPU0Zkq4yF
+P0rDjVC+lvlR1qTYk3HIgfjMXARf0y9oqlyMfBY9eaxMQf+Wn4TjB2LOtd8LlmCR
+2cOMp22V5/S+5FlOKBBszPKU8prvcBFHpvcvF5D0XZMitGP8wuVfMRj2hEoEpzmm
+9HjlIouZ+dQ8q6q6T1uZk1EwFwv0C5oMWarVvJb/q2pSMMYYQkbzZHGyCNmelghf
+SWr8NvNof7PWiIgP99ywdtLIEfdLwxHb+uBnd7B29BgxuxHUSeBTTPKVzobfQf4c
+1C22/GrETYzMgzQD6A8iDXHj1pjkQNvGdktTT9xu0fEL6r3wip+B93DyXha9/YCq
+zh0jhz4I34gzEpFatFCI
+=NCI3
 -----END PGP SIGNATURE-----
