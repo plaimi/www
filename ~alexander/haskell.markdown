@@ -91,9 +91,6 @@ necessary.
 * <div id="green">[Miran Lipovaĉa: Learn You a Haskell for Great Good!](http://learnyouahaskell.com/) * </div>
   Fun Haskell book for complete Haskell newbies that have been coding at least a bit in an imperative language. Well recommended as a first stop.
 
-* <div id="green">[Brian O'Sullivan, Don Stewart & John Goerzen: Real World Haskell](http://book.realworldhaskell.org/) * </div>
-  Example-heavy introductionary book. A few of the simplifications and wordings annoyed me, but those are minor complaints. It's a good read overall.
-
 * <div id="yellow">[*Simon Peyton Jones: A Taste of Haskell*](http://youtu.be/jLj1QV11o9g) * * % </div>
   Simon giving us a whirlwind tour. Might pique your interest, and as such might act as a first stop. Can be watched in tandem with reading Learn You a Haskell for Great Good!, to get a sneak peek at what's coming up.
 
