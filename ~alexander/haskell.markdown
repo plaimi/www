@@ -131,9 +131,6 @@ necessary.
 
 * * *
 # Types
-* <div id="green">[*Brian Hurt: A Pragmatic Case for Static Typing*](http://vimeo.com/72870631) * % </div>
-  Why strong static typing matters in practice, i.e. how it makes us get to working code more quickly. Also includes a bit about how clever STM is in Haskell.
-
 * <div id="yellow">[Philip Wadler & Stephen Blott: How to make ad-hoc polymorphism less ad-hoc](http://202.3.77.10/users/karkare/courses/2010/cs653/Papers/ad-hoc-polymorphism.pdf) * * </div>
   The introduction of type classes. Great paper; a must-read. Imperative functional programming is its counterpart for doing IO.
 
