@@ -69,6 +69,12 @@ necessary.
 * <div id="yellow">[P. J. Landin: The Next 700 Programming Languages](http://www.thecorememory.com/Next_700.pdf) * * </div>
   Obligatory read on denotational programming. The paper that defined denotative.
 
+* <div id="yellow">[*Conal Elliott: Denotational Design -- from meanings to programs (Part 1)*](https://www.youtube.com/watch?v=zzCrZEil9iI) * * % </div>
+* <div id="yellow">[*Conal Elliott: Denotational Design -- from meanings to programs (Part 2)*](https://www.youtube.com/watch?v=wSzrK7dloeI) * * % </div>
+* <div id="yellow">[*Conal Elliott: Denotational Design -- from meanings to programs (Part 3)*](https://www.youtube.com/watch?v=Qq4sh7scR_Q) * * % </div>
+* <div id="yellow">[*Conal Elliott: Denotational Design -- from meanings to programs (Part 4)*](https://www.youtube.com/watch?v=Hp3v28ws1ps) * * % </div>
+  Conal talks about how much denotative design means when he designs his libraries. You should listen to him, because he sure knows what he's talking about. The man has written some absolutely neat libraries. He's also sometimes called the Bob Ross of functional programming, so, you know, there's that. A very pleasant man, and a very interesting topic.
+
 * * *
 # GHC
 * <div id="yellow">[The Architecture of Open Source Applications (Volume 2): The Glasgow Haskell Compiler](http://www.aosabook.org/en/ghc.html) * * </div>
