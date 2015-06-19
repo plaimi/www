@@ -138,6 +138,11 @@ necessary.
   Simon gives us a whirlwind tour of how Haskell tries to provide you tools for all the different cost-models of concurrent and parallel programming. Relatively gentle introduction, but you should know parallel programming somewhat well before watching it.
 
 * * *
+# Parsing
+*  <div id="green">[Graham Hutton & Erik Meijer: Monadic Parsing in Haskell](http://www.cs.uwyo.edu/~jlc/courses/3015/parser_pearl.pdf) * </div>
+  If you are familiar with monads and what parsing actually is and does already, this is a breeze to read. It describes how to use monads and do-notation for parsers in a truly elegant manner.
+
+* * *
 # Types
 * <div id="yellow">[Philip Wadler & Stephen Blott: How to make ad-hoc polymorphism less ad-hoc](http://202.3.77.10/users/karkare/courses/2010/cs653/Papers/ad-hoc-polymorphism.pdf) * * </div>
   The introduction of type classes. Great paper; a must-read. Imperative functional programming is its counterpart for doing IO.
