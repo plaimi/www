@@ -43,11 +43,6 @@ necessary.
 * <div id="green">[Gabriel Gonzalez: Equational reasoning](http://www.haskellforall.com/2013/12/equational-reasoning.html) * </div>
   The substitutions of equals for equals is in my opinion the most powerful thing about Haskell and purely functional programming languages. This article explains how to do it, in a simple yet comprehensive way.
 
-* <div id="green">[Aditya Bhargava: Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) * </div>
-  A pleasant intro to functors, applicatives and monads. Too many simplifications for my taste, but still useful. "Values wrapped in context" is not a good way to consider monads. Instead, simply think of them of a way to get a → m b.
-
-* <div id="green">[Aditya Bhargava: Three Useful Monads](http://adit.io/posts/2013-06-10-three-useful-monads.html) * </div>
-  A pleasant intro to the writer, reader and state monads. Builds on the previous one, and continues the simplifications, unfortunately.
 
 * <div id="green">[Chris Smith: Why Do Monads Matter?](http://cdsmith.wordpress.com/2012/04/18/why-do-monads-matter/) * </div>
   A much more correct intro to why monads matter to programmers, aimed at programmers or mathematicians. It's very gentle, and, in my opinion, very good. Highly recommended!
