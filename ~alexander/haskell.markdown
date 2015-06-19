@@ -43,6 +43,8 @@ necessary.
 * <div id="green">[Gabriel Gonzalez: Equational reasoning](http://www.haskellforall.com/2013/12/equational-reasoning.html) * </div>
   The substitutions of equals for equals is in my opinion the most powerful thing about Haskell and purely functional programming languages. This article explains how to do it, in a simple yet comprehensive way.
 
+* <div id="green">[Dan Piponi: You Could Have Invented Monads! (And Maybe You Already Have)](http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html) * * <div>
+  You should arguably know basics like recursion and higher-order functions before reading this -- but it is a rather cute introduction to monads. Often cited as the best one. It has very neat exercises.
 
 * <div id="green">[Chris Smith: Why Do Monads Matter?](http://cdsmith.wordpress.com/2012/04/18/why-do-monads-matter/) * </div>
   A much more correct intro to why monads matter to programmers, aimed at programmers or mathematicians. It's very gentle, and, in my opinion, very good. Highly recommended!
