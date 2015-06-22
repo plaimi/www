@@ -135,7 +135,8 @@ main = hakyllWith configuration $ do
                   ,"swag.markdown"
                   ,"~alexander/haskell.markdown"
                   ,"~alexander/index.markdown"
-                  ,"~olle/index.markdown"]) $ do
+                  ,"~olle/index.markdown"
+                  ,"~emil/index.markdown"]) $ do
     route   $ setExtension "html"
     compile $ pandocCompiler
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
