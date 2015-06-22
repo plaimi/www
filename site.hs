@@ -123,6 +123,7 @@ main = hakyllWith configuration $ do
   -- Pure file copy.
   match (fromList ["~alexander/contact.txt"
                   ,"~olle/contact.txt"
+                  ,"~emil/contact.txt"
                   ]) copyFiles
 
   -- Pure file copy with globs.
