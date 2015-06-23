@@ -16,5 +16,7 @@ many different things.
 plaimi became a registered joint-stock company under the Cerpus group in 
 January 2014.
 
-In 2015 we were joined by [Olle](~olle), who briefly worked as a full-time 
+Early 2015 we were joined by [Olle](~olle), who briefly worked as a full-time 
 employee, and has stayed on as a non-employed member since.
+
+[Emil](~emil) joined us mid-2015 for a summer job.
