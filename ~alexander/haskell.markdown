@@ -47,7 +47,7 @@ necessary.
   You should arguably know basics like recursion and higher-order functions before reading this -- but it is a rather cute introduction to monads. Often cited as the best one. It has very neat exercises.
 
 * <div id="green">[Chris Smith: Why Do Monads Matter?](http://cdsmith.wordpress.com/2012/04/18/why-do-monads-matter/) * </div>
-  A much more correct intro to why monads matter to programmers, aimed at programmers or mathematicians. It's very gentle, and, in my opinion, very good. Highly recommended!
+  Understanding why monads matter. Aimed at programmers or mathematicians. It's very gentle, and, in my opinion, very good. Highly recommended!
 
 * <div id="yellow">[Gabriel Gonzalez: Equational reasoning at scale](http://www.haskellforall.com/2014/07/equational-reasoning-at-scale.html) * </div>
   Follow up to Gabriel's equational reasoning article. Here he explains how this scales. Very useful article, but you should at least be vaguely familiar with monoids and applicatives before diving in.
