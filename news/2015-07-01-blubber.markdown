@@ -1,0 +1,13 @@
+---
+title: What we're up to + announcing blubber
+---
+Following our authoring a [paper that described an e-learning module authoring 
+tool](/papers/2015-04-11-learn-by-teaching.html), we have now acquired funding 
+for a pre-project in which you hope to substantiate our idea. This means 
+evaluating the related research properly, and establishing a cohesive idea for 
+the minimally viable product.
+
+Unrelated entirely is [blubber](/games/blubber.html). blubber is a simple 
+arcade game in which you control a blub, that needs to blubber all the smaller 
+blubs, in other to grow big enough to blubber the rest of the blubs. Expect 
+lots of neat updates!
