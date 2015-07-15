@@ -5,7 +5,7 @@ title: Alexander
 * * *
 #Personal
 
-Alexander Berntsen is a free software hacker wizard that lives in Gjøvik,
+Alexander Berntsen is a free software hacker wizard that lives in Trondheim,
 Norway.
 
 * * *
