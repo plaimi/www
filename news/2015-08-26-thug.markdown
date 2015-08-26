@@ -1,0 +1,14 @@
+---
+title: Announcing the Trondheim Haskell Users' Group
+---
+Following Alexander's move to Trondheim, it's only natural for plaimi to take 
+on the responsibility of proselytising Haskell to Trøndere. The vehicle for 
+this is the [Trondheim Haskell Users' 
+Group](http://www.meetup.com/Trondheim-Haskell-Users-Group/) (THUG).
+
+THUG will be about... whatever the members want it to be about. But probably 
+mostly Haskell. :)
+
+If you are in the Trondheim area and interested in Haskell, make sure you
+don't miss THUG's [first
+meetup](http://www.meetup.com/Trondheim-Haskell-Users-Group/events/224896251/)!
